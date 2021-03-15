@@ -91,7 +91,7 @@ class TitleDaoFake(initialTitle: String) : TitleDao {
  * Testing Fake implementation of MainNetwork
  */
 class MainNetworkFake(var result: String) : MainNetwork {
-    override suspend fun fetchNextTitle() = result // replace with `result`
+    override suspend fun fetchNextTitle() = result// TODO: replace with `result`
 }
 
 /**
@@ -100,7 +100,7 @@ class MainNetworkFake(var result: String) : MainNetwork {
 class MainNetworkCompletableFake() : MainNetwork {
     private var completable = CompletableDeferred<String>()
 
-    override suspend fun fetchNextTitle(): String = completable.await() // replace with `completable.await()`
+    override suspend fun fetchNextTitle() = completable.await() // TODO: replace with `completable.await()`
 
     fun sendCompletionToAllCurrentRequests(result: String) {
         completable.complete(result)
