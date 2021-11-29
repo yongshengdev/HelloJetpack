@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ResultSimpleActivity">
 
     <TextView
         android:id="@+id/tv_content"
@@ -13,20 +13,8 @@
         android:layout_height="100dp" />
 
     <Button
-        android:id="@+id/btn_start_activity_for_result"
+        android:id="@+id/btn_return"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="startActivityForResult" />
-
-    <Button
-        android:id="@+id/btn_activity_results_api"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Activity Results API" />
-
-    <Button
-        android:id="@+id/btn_simple_activity_results_api"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Simple Activity Results API" />
+        android:text="return result api result" />
 </LinearLayout>
